@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.content-all{
+    width: 50%;
+    perspective: 1000px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.content-carrousel{
+    width: 50%;
+    position: absolute;
+    -webkit-animation: rotar 10s infinite linear;
+    -webkit-transform-style: preserve-3d;
+    margin-top: 100px;
+    margin-left: 400px
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+   cursor: pointer;
+}
+
+.content-carrousel figure{
+    width: 50%;
+    height: 150%;
+    overflow: inherit;
+    position: absolute;
+        
+}
+
+figure{
+  filter: opacity(80%);
+    
+}
+
+.content-carrousel figure:nth-child(0){transform: rotateY(0deg) translateZ(300px)}
+.content-carrousel figure:nth-child(2){transform: rotateY(90deg) translateZ(300px)}
+.content-carrousel figure:nth-child(3){transform: rotateY(180deg) translateZ(300px)}
+.content-carrousel figure:nth-child(4){transform: rotateY(360deg) translateZ(300px)}
+
+
+.content-carrousel img{
+    width: 100%;
+transition: 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+    }
+
+@-webkit-keyframes rotar {
+    from{
+    -webkit-transform:rotateY(0deg) 
+        
+    }to{
+    -webkit-transform: rotateY(360deg)
+    }
+        
+    }
+
+div {
+    
+    font-family: verdana;
+    color:burlywood;
+    font-size: 18px;
+    width: 800px;
+    text-align: justify;    
+}
+
+h2{
+color: darkred;
+    font-family: verdana:
+}
+
+div li{
+    color: maroon;
+    list-style: none;
+    font-family: verdana;
+    }
+
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+
+
+
+

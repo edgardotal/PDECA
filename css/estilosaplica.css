@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+div#body {
+    margin-top: 60px;
+    width: 1200px;
+    height: 300px;
+    border: 1px solid white;
+} 
+
+
+div#clientes img{
+    width: 60%;
+    height: 100%;
+    float: left;
+  }
+
+div#android img{
+    margin-top: 40px;
+    margin-right: 10%;
+    width: 15%;
+    height: 20%;
+    float: left;
+   -webkit-animation: temblar 0.2s infinite linear;
+    
+  }
+
+
+div #apple img{
+    margin-top: 40px;
+    width: 15%;
+    height: 20%px;
+    loat: left;
+-webkit-animation:rotate 1s infinite linear;
+}
+
+
+
+body{
+    background-color: white;
+}
+
+nav {
+    color: black;
+    font-family: verdana;
+    font-size: 18px;
+    text-align: justify;
+    max-width: inherit;
+    margin-top: 50px;
+}
+
+
+@-webkit-keyframes temblar{
+    20% {margin-top: 0;}
+        
+}
+
+@-webkit-keyframes rotate{
+    0%{-webkit-transform:rotateZ(-360deg);}
+    100%{-webkit-transform:rotateZ(0deg);}
+}

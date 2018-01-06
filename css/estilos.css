@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-size: cover;
+    background-image: url(/imagenes/hielo1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+#cabeza{
+    padding: 0;
+    text-outline: 0;
+    margin: inherit;
+    float: left;
+    color:navy;
+    font-variant-alternates: normal;        
+}
+
+#cabeza h1{
+    font-size: 300%
+    
+}
+
+#logo{
+    float:right;
+    margin: 20px auto;
+    animation: cambiar 4s infinite linear;
+    }
+
+nav{
+    width: 55%;
+    height: 2em auto;
+    
+}
+
+
+nav ul{
+    background:#023859;
+    border-radius: 3px;
+    box-shadow: 0 -3px #000 inset,
+                0 1px  inset,
+                0 2px #666 inset;
+    height: 2.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li a{
+    box-shadow: 1px 0 rgba(0,0,0,.8),
+                2px 0 rgba(255,255,255,.1);
+    color: azure;
+    float: left;
+    display: block;
+    font-family: verdana;
+    line-height: 2.5rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    
+}
+
+nav li a:hover{
+    background: rgba(0,0,0,.4);
+}
+
+
+h1 {
+    font-size: 35px;
+    color:darkcyan
+   }
+
+
+p{
+    
+    top: 60px;
+    position: relative;
+    color: n;
+    font-size: 22px;
+    font-family: verdana;
+    text-align: center;
+        
+}
+
+
+@keyframes cambiar{
+    70% {margin-top: 0;}
+        
+}
